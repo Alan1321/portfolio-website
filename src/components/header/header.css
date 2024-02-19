@@ -1,0 +1,38 @@
+header {
+    height: 5rem;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -1px 1px 1px;
+    text-decoration: none;
+    color: black;
+}
+
+.header .logo {
+    /* background-color: blue; */
+    width:40%;
+    margin-left: 8rem;
+    text-decoration: none;
+}
+
+.header .logo a{
+    text-decoration: none;
+}
+
+.header ul {
+    display: flex;
+    justify-content: space-between;
+    width:40%;
+    list-style-type: none;
+    margin-right: 7rem;
+}
+
+.header ul li {
+    cursor: pointer;
+}
+
+.header ul li a {
+    text-decoration: none;
+}
