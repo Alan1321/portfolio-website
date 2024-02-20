@@ -51,6 +51,7 @@
 
 .menu_bar {
     display:none;
+    margin-right: 20px;
 }
 
 .header ul li {
@@ -75,7 +76,7 @@
     .logo {
         display: flex;
         width: 90%;
-        background-color: red;
+        /* background-color: red; */
         justify-content: space-between;
         text-align: center;
         align-items: center;

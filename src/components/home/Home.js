@@ -9,16 +9,22 @@ const Home = () => {
     <div className="home_main">
         <div className="social">
             <ul>
-                <li><InstagramIcon /></li>
-                <li><TwitterIcon /></li>
-                <li><GitHubIcon /></li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank"><InstagramIcon /></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/" target="_blank"><TwitterIcon /></a>
+                </li>
+                <li>
+                    <a href="https://www.github.com/Alan1321" target="_blank"><GitHubIcon /></a>
+                </li>
             </ul>
         </div>
         <div className="main_container">
             <div className="profile_info">
                 <div className="main_info">
                     <h1 className="each_profile_info profile_name">Alan Subedi</h1>
-                    <h4 className="each_profile_info profile_title">___Full_Stack_Developer</h4>
+                    <h4 className="each_profile_info profile_title"> Full Stack Developer</h4>
                     <p className="each_profile_info profile_description">I'm a developer based in Huntsville, Alabama. I'm very passionate and dedicated to my work.</p>
                 </div>
                 <button className="say_hello"></button>
