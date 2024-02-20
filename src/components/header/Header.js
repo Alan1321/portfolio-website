@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header className={Toggle ? "header activeee" : "header"}>
         <div className="logo">
-            <a href="">Smith</a>
+            <a href="">MyPortfolio</a>
             <div className="menu_bar" onClick={()=>setToggle(!Toggle)}>
                 <MenuIcon />
             </div>

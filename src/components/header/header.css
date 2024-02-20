@@ -9,9 +9,19 @@
     text-decoration: none;
     color: black;
     column-gap: 5em;
-    position: fixed;
+    position: sticky;
     top:0;
     left:0; 
+    z-index: 10;
+    background-color: white;
+}
+
+.header div a {
+    color: black;
+}
+
+.header .nav_menu ul li a {
+    color:black;
 }
 
 .header .logo {
