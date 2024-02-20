@@ -1,32 +1,46 @@
-header {
+.header {
     height: 5rem;
     width: 100%;
     /* background-color: red; */
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    box-shadow: -1px 1px 1px;
+    box-shadow: 0px 5px 5px 1px grey;
     text-decoration: none;
     color: black;
+    column-gap: 5em;
+    position: fixed;
+    top:0;
+    left:0; 
 }
 
 .header .logo {
-    /* background-color: blue; */
-    width:40%;
-    margin-left: 8rem;
     text-decoration: none;
+    margin-left: 2rem;
+    /* background-color: blue; */
 }
 
 .header .logo a{
     text-decoration: none;
+    font-size: 1.5rem;
 }
 
-.header ul {
+.nav_menu {
+    display:flex;
+}
+
+.nav_list_web {
     display: flex;
     justify-content: space-between;
-    width:40%;
+    /* width:90%; */
     list-style-type: none;
-    margin-right: 7rem;
+    margin-right: 3rem;
+    column-gap: 2rem;
+    /* background-color: green;s */
+}
+
+.menu_bar {
+    display:none;
 }
 
 .header ul li {
@@ -35,4 +49,53 @@ header {
 
 .header ul li a {
     text-decoration: none;
+}
+
+/* for smaller screen */
+@media screen and (width < 700px) {
+    .nav_list_web {
+        display:none; 
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    .nav_list_web li {
+        margin-bottom: 10px;
+    }
+    .logo {
+        display: flex;
+        width: 90%;
+        /* background-color: red; */
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+    }
+    .header {
+        flex-direction: column;
+    }
+
+    .nav_menu {
+        width: 60%;
+        margin-right: 2rem;
+        flex-direction: column;
+        /* background-color: blue; */
+    }
+    .menu_bar {
+        display:flex;
+        align-items: center;
+        /* width:100%; */
+        justify-content: right;
+        /* background-color: red; */
+    }
+    .activee {
+        display:flex;
+        text-align: center;
+        align-items: center;
+    }
+
+    .activeee{
+        height: 20rem;
+        text-align: center;
+        align-items: center;
+    }
 }
