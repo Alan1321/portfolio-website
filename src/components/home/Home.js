@@ -4,9 +4,9 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-const Home = () => {
+const Home = ({ id }) => {
   return (
-    <div className="home_main">
+    <div id={id} className="home_main">
         <div className="social">
             <ul>
                 <li>

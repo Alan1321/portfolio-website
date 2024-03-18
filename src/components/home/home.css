@@ -1,6 +1,7 @@
 .home_main {
     display:flex;
-    height: 95vh;
+    height: 100vh;
+    padding-top: 5rem;
 }
 
 .social {

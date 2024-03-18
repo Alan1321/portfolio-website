@@ -16,6 +16,7 @@
 
 .about_heading h1 {
     font-size: 3rem;
+    margin-bottom: 0.5rem;
 }
 
 .subtitle {
@@ -36,7 +37,7 @@
 
 .about_right_sub_container {
     width: 40%;
-    margin-top: 2.5rem;
+    margin-top: 3.5rem;
     /* background-color: red; */
 }
 
@@ -46,6 +47,7 @@
     /* background-color: red; */
     justify-content: left;
     column-gap: 3rem;
+    margin-right: 10px;
 
 }
 
@@ -53,6 +55,11 @@
     margin-bottom: 2.5rem;
 }
 
+.download_buttons {
+    /* background-color: red; */
+    display: flex;
+    column-gap: 2rem;
+}
 
 /* CSS for INFO BOX Container */
 

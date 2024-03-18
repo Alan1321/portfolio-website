@@ -4,11 +4,22 @@ import InfoBox from './InfoBox'
 import Button from '@mui/material/Button';
 
 const About = ({ id }) => {
+
+    const clickHandler = (filename) =>{
+        const resumeUrl = process.env.PUBLIC_URL + filename;
+        const downloadLink = document.createElement('a');
+        downloadLink.href = resumeUrl;
+        downloadLink.download = filename;
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+    }
+
   return (
     <div id={id} className="about">
         <div className="about_heading">
             <h1 className="title">About Me</h1>
-            <h5 className="subtitle">My introduction</h5>
+            <p className="subtitle">My introduction</p>
         </div>
         <div className="about_main_container">
             <div className="image_container">
@@ -21,9 +32,17 @@ const About = ({ id }) => {
                     <InfoBox title="Availability" mini_info="Anytime" />
                 </div>
                 <p className="main_info about_infoo">
-                Welcome to my portfolio! I'm a full-stack developer with a strong focus on frontend development, currently pursuing a Bachelor's in Computer Science at The University of Alabama in Huntsville. Graduating in May 2024, I combine technical proficiency with design flair to craft seamless user experiences. Let's connect and explore the possibilities of collaboration and innovation in web development.
+                Welcome to my portfolio! I'm a full-stack developer with a strong focus on frontend development, currently pursuing a Bachelor's in Computer Science at The University of Alabama in Huntsville. Graduating in May 2024.
+                <br></br>Let's connect and explore the possibilities of collaboration and innovation in web development.
                 </p>
-                <Button color="success" variant="contained" className="download_cv about_infoo">Download CV</Button>
+                <div className="download_buttons">
+                    <Button color="success" variant="contained" className="download_cv about_infoo" onClick={()=>clickHandler('resume.pdf')}>
+                        Download CV
+                    </Button>
+                    <Button color="success" variant="contained" className="download_cv about_infoo" onClick={()=>clickHandler('transcript.pdf')}>
+                        Download Transcript
+                    </Button>
+                </div>
             </div>
         </div>
     </div>

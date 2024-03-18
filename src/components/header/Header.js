@@ -1,8 +1,9 @@
 import React, {useState} from 'react'
 import './header.css'
 import MenuIcon from '@mui/icons-material/Menu';
+import { Link } from 'react-scroll';
 
-const Header = () => {
+const Header = ({ nav_menu }) => {
 
     const [Toggle, setToggle] = useState(false)
 
@@ -17,22 +18,34 @@ const Header = () => {
         <div className="nav_menu">
             <ul className={Toggle ? "nav_list_web activee" : "nav_list_web"}>
                 <li>
-                    <a href="">Home</a>
+                    <Link activeClass="active" smooth spy to={nav_menu[0]}>
+                        {nav_menu[0]}
+                    </Link>
                 </li>
                 <li>
-                    <a href="">About</a>
+                    <Link activeClass="active" smooth spy to={nav_menu[1]}>
+                        {nav_menu[1]}
+                    </Link>
                 </li>
                 <li>
-                    <a href="">Skills</a>
+                    <Link activeClass="active" smooth spy to={nav_menu[2]}>
+                        {nav_menu[2]}
+                    </Link>
                 </li>
                 <li>
-                    <a href="">Services</a>
+                    <Link activeClass="active" smooth spy to={nav_menu[3]}>
+                            {nav_menu[3]}
+                    </Link>
                 </li>
                 <li>
-                    <a href="">Portfolio</a>
+                    <Link activeClass="active" smooth spy to={nav_menu[4]}>
+                            {nav_menu[4]}
+                    </Link>
                 </li>
                 <li>
-                    <a href="">Contact</a>
+                    <Link activeClass="active" smooth spy to={nav_menu[5]}>
+                            {nav_menu[5]}
+                    </Link>
                 </li>
             </ul>
         </div>
