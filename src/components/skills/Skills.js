@@ -13,8 +13,8 @@ const Skills = ({ id }) => {
           <div className="skills_frontend">
             <h3 className="skills_title1">Frontend</h3>
             <div className="skills_skill">
-              <SkillsBox title={"HTML"} subtitle={"Intermediate"} />
-              <SkillsBox title={"CSS"} subtitle={"Intermediate"} />
+              <SkillsBox title={"HTML"} subtitle={"Intermediate ++"} />
+              <SkillsBox title={"CSS"} subtitle={"Intermediate ++"} />
               <SkillsBox title={"JavaScript"} subtitle={"Intermediate"} />
               <SkillsBox title={"React"} subtitle={"Intermediate"} />
               <SkillsBox title={"Redux"} subtitle={"Intermediate"} />
@@ -27,9 +27,9 @@ const Skills = ({ id }) => {
               <SkillsBox title={"AWS"} subtitle={"Intermediate"} />
               <SkillsBox title={"Python"} subtitle={"Intermediate"} />
               <SkillsBox title={"Node"} subtitle={"Intermediate"} />
-              <SkillsBox title={"Java"} subtitle={"Basic"} />
-              <SkillsBox title={"Spring Boot"} subtitle={"Basic"} />
-              {/* <SkillsBox title={"Styled Components"} subtitle={"Intermediate"} /> */}
+              <SkillsBox title={"Java"} subtitle={"Basic ++"} />
+              <SkillsBox title={"Spring Boot"} subtitle={"Basic ++"} />
+              <SkillsBox title={"MySQL"} subtitle={"Basic ++"} />
             </div>
           </div>
         </div>

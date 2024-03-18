@@ -1,6 +1,7 @@
 .header {
     height: 5rem;
     width: 100%;
+    width:100%;
     /* background-color: red; */
     display: flex;
     justify-content: space-around;
@@ -71,12 +72,10 @@
         width: 100%;
     }
     .nav_list_web li {
-        /* margin-bottom: 10px; */
     }
     .logo {
         display: flex;
         width: 90%;
-        /* background-color: red; */
         justify-content: space-between;
         text-align: center;
         align-items: center;
@@ -84,20 +83,17 @@
     }
     .header {
         flex-direction: column;
+        width: 100vw;
     }
-
     .nav_menu {
         width: 60%;
         margin-right: 2rem;
         flex-direction: column;
-        /* background-color: blue; */
     }
     .menu_bar {
         display:flex;
         align-items: center;
-        /* width:100%; */
         justify-content: right;
-        /* background-color: red; */
     }
     .activee {
         display:flex;
