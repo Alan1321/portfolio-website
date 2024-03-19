@@ -1,7 +1,9 @@
 .projects {
-    height:100vh;
-    padding-top: 5rem;
-    width:100%;
+    min-height: 100vh;
+    height:auto;
+    padding-top: 4rem;
+    width:100vw;
+    /* background-color: blue; */
 }
 
 .projects_title {
@@ -10,8 +12,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5rem;
     margin-top: 3rem;
+    margin-bottom: 2rem;
 }
 
 .projects h1 {
@@ -22,3 +24,82 @@
 .projects_subtitle {
     color: grey;
 }
+
+.projects_outercontainer {
+    height: auto;
+    width:100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects_innercontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    flex-wrap: wrap;
+    /* background-color: red; */
+}
+
+/* CSS for PROJECT BOX */
+
+.project_box {
+    width:20rem;
+    min-height:24rem;
+    border: 1px solid lightgrey;
+    /* background-color: red; */
+    /* display: flex; */
+    /* text-align: center; */
+    border-radius: 10px;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+}
+
+.project_box img {
+    height:80%;
+    object-fit: cover;
+    min-height: 12rem;
+    background-color: blue;
+    width:100%;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 5px;
+}
+
+.project_box_titles a {
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.project_box_titles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+    margin-top: 0.5rem;
+    
+}
+
+.project_box_titles .github {
+    margin-right: 10px;
+}
+
+.project_box_tech_used {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project_box_tech_used div {
+    color: white;
+    background-color: rgba(0,0,195,0.75);
+    margin:5px;
+    padding:5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+

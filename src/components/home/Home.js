@@ -1,22 +1,23 @@
 import React from 'react'
 import './home.css'
-import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Home = ({ id }) => {
+
   return (
     <div id={id} className="home_main">
         <div className="social">
             <ul>
                 <li>
-                    <a href="https://www.instagram.com/" target="_blank"><InstagramIcon /></a>
-                </li>
-                <li>
-                    <a href="https://www.twitter.com/" target="_blank"><TwitterIcon /></a>
+                    <a href="https://www.linkedin.com/in/alan1321/" target="_blank"><LinkedInIcon /></a>
                 </li>
                 <li>
                     <a href="https://www.github.com/Alan1321" target="_blank"><GitHubIcon /></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/" target="_blank"><TwitterIcon /></a>
                 </li>
             </ul>
         </div>

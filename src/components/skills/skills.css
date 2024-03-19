@@ -1,6 +1,7 @@
 /* CSS for SKILLS */
 .Skills {
-    height:100vh;
+    height: auto;
+    min-height:100vh;
     padding-top: 5rem;
     width:100%;
 }
